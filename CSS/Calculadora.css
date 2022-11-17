@@ -1,0 +1,27 @@
+.titulo_numeros{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font: bold 12pt/14pt arial, serif;
+     }
+
+.entrada_numeros{
+    border: 3px rgba(0, 0, 0, 0.951) ridge; 
+    width: 250px;
+    text-align: right;
+    background-color: #f5f6e6;
+}
+
+.botones1_calculadora{
+    color: rgb(186, 22, 22);
+    text-align: center;
+    font: 10pt/12pt arial, serif;
+    border: 1.5px rgba(0, 0, 0, 0.951) ridge; 
+    width: 83px;
+}
+.botones2_calculadora{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: 10pt/12pt arial, serif;
+    border: 1.5px rgba(0, 0, 0, 0.951) ridge; 
+    width: 48px;
+}
