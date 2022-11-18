@@ -25,7 +25,7 @@
         <input type="button" class="botones2_calculadora" value="7" onclick="numero('7')"/>
         <input type="button" class="botones2_calculadora" value="8" onclick="numero('8')"/>
         <input type="button" class="botones2_calculadora" value="9" onclick="numero('9')"/>
-        <input type="button" class="botones2_calculadora" value="/" onclick="div()"/>
+        <input type="button" class="botones2_calculadora" value="/" onclick="operacion('/')"/>
         <input type="button" class="botones2_calculadora" value="Raiz" onclick="raiz()"/>
     </div>
     <br>
@@ -33,7 +33,7 @@
         <input type="button" class="botones2_calculadora" value="4" onclick="numero('4')"/>
         <input type="button" class="botones2_calculadora" value="5" onclick="numero('5')"/>
         <input type="button" class="botones2_calculadora" value="6" onclick="numero('6')"/>
-        <input type="button" class="botones2_calculadora" value="*" onclick="multi()"/>
+        <input type="button" class="botones2_calculadora" value="*" onclick="operacion('*')"/>
         <input type="button" class="botones2_calculadora" value="%" onclick="porce()"/>
     </div>
     <br>
@@ -41,8 +41,16 @@
         <input type="button" class="botones2_calculadora" value="1" onclick="numero('1')"/>
         <input type="button" class="botones2_calculadora" value="2" onclick="numero('2')"/>
         <input type="button" class="botones2_calculadora" value="3" onclick="numero('3')"/>
-        <input type="button" class="botones2_calculadora" value="-" onclick="rest()"/>
+        <input type="button" class="botones2_calculadora" value="-" onclick="operacion('-')"/>
         <input type="button" class="botones2_calculadora" value="1/x" onclick="inver()"/>
+    </div>
+    <br>
+    <div>
+        <input type="button" class="botones2_calculadora" value="0" onclick="numero('0')"/>
+        <input type="button" class="botones2_calculadora" value="+/-" onclick="opues()"/>
+        <input type="button" class="botones2_calculadora" value="." onclick="numero('.')"/>
+        <input type="button" class="botones2_calculadora" value="+" onclick="operacion('+')"/>
+        <input type="button" class="botones2_calculadora" value="=" onclick="igual()"/>
     </div>
     <script src="Js/Calculadora.js"></script>
 </body>
