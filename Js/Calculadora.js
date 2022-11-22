@@ -49,7 +49,7 @@ function numero(value) {
 
 function operacion(tipo) 
 {
-   ni=x;
+   num=x;
    op=tipo;
    x_borrar=1;
 }	
@@ -63,10 +63,10 @@ function igual()
    
    else 
    { 
-      op=ni+op+x; 
+      op=num+op+x; 
       resultado = eval(op);
       pantalla.innerHTML = resultado;
-      x=sol; 
+      x=resultado; 
       op="no"; 
       x_borrar=1;
    }       
@@ -76,5 +76,38 @@ function c()
 {
    pantalla = document.getElementById('textoPantalla');
    pantalla.innerHTML = "0";
+   coma=0;
+   x= "0";
+   op="no"
    x_borrar=1;
+}
+
+function ce() 
+{
+   pantalla.innerHTML = 0; 
+   x=0;
+   coma=0; 			
+}
+
+function raiz()
+{
+   num = Number (x);
+   raiz_op = Math.sqrt(num);
+   resultado = String(raiz_op); 
+   pantalla.innerHTML=resultado; 
+   op="no"; 
+   x_borrar = 1;
+}
+function porce() 
+{ 
+   resultado = x/100; 
+   pantalla.innerHTML = resultado;
+   x_borrar = 1; 
+}
+function opues() 
+{ 
+   num_inv=Number(x); 
+   num_inv=-num_inv; 
+   resultado = String(num_inv);
+   pantalla.innerHTML = resultado; 
 }
