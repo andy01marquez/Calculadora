@@ -10,7 +10,7 @@ var num=0;
 pantalla=document.getElementById("textoPantalla"); 
 
 function numero(value) { 
-   if (x=="0" || borrar==1  ) 
+   if (x=="0" || borrar==1) 
    { 
    pantalla.innerHTML=value; 
    x=value; 
