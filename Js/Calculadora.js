@@ -1,7 +1,7 @@
 
 
 var x="0";
-var x_borrar=1;
+var borrar=1;
 var coma=0;
 var op="no";
 var valor = 0;
@@ -10,7 +10,7 @@ var num=0;
 pantalla=document.getElementById("textoPantalla"); 
 
 function numero(value) { 
-   if (x=="0" || x_borrar==1  ) 
+   if (x=="0" || borrar==1  ) 
    { 
    pantalla.innerHTML=value; 
    x=value; 
@@ -44,14 +44,14 @@ function numero(value) {
           x+=value;
       } 
    }
-   x_borrar=0; 
+   borrar=0; 
 }
 
 function operacion(tipo) 
 {
    num=x;
    op=tipo;
-   x_borrar=1;
+   borrar=1;
 }	
 
 function igual() 
@@ -68,7 +68,7 @@ function igual()
       pantalla.innerHTML = resultado;
       x=resultado; 
       op="no"; 
-      x_borrar=1;
+      borrar=1;
    }       
 }
 
@@ -79,7 +79,7 @@ function c()
    coma=0;
    x= "0";
    op="no"
-   x_borrar=1;
+   borrar=1;
 }
 
 function ce() 
@@ -96,13 +96,13 @@ function raiz()
    resultado = String(raiz_op); 
    pantalla.innerHTML=resultado; 
    op="no"; 
-   x_borrar = 1;
+   borrar = 1;
 }
 function porce() 
 { 
    resultado = x/100; 
    pantalla.innerHTML = resultado;
-   x_borrar = 1; 
+   borrar = 1; 
 }
 function opues() 
 { 
